@@ -92,7 +92,7 @@ matriz1
 sum(is.na(predictiongKNN))
 
 
-##MODELO KNN
+##Implementación MODELO KNN
 metric  <- "Accuracy"
 set.seed(2013)
 

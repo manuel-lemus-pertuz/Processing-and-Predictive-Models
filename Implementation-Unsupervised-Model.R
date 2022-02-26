@@ -84,10 +84,7 @@ install.packages("FeatureImpCluster")     #v 0.1.5
 install.packages("flexclust")             #v 1.4-0
 library(FeatureImpCluster)
 library(flexclust)
-#> Lade nötiges Paket: grid
-#> Lade nötiges Paket: lattice
-#> Lade nötiges Paket: modeltools
-#> Lade nötiges Paket: stats4
+
 set.seed(6584)  #PSG FINAL
 res <- kcca(datoss,k=2)
 FeatureImp_res <- FeatureImpCluster(res,as.data.table(datoss))

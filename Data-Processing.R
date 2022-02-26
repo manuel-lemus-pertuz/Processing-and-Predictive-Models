@@ -153,11 +153,11 @@ library(leaps)      # model selection functions
 datos <- AOS_HRP_N    # Realizar analisis de Feature Selection con un primer dataset (PSG o)
 datos <- AOS_PSG_N    # Al finalizar realizar analisis con el segundo dataset (PSG o HRP)
 
-##FORWARD
+## Aplicando método FORWARD
 forward <- regsubsets(outcome ~ ., datos, nvmax = , method = "forward")
 summary(forward)
 
-##BACKWARD
+## Aplicando método BACKWARD
 backward <- regsubsets(outcome ~ ., datos, nvmax = , method = "backward")
 summary(backward)
 
